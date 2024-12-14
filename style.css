@@ -38,7 +38,7 @@ h1 {
 }
 
 #list {
-    font-size: 32px;
+    font-size: 26px;
 }
 
 ul {
@@ -71,7 +71,7 @@ a:visited {
 }
 li:hover {
     animation: anim1 3s infinite;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 @keyframes anim1 {
@@ -149,9 +149,20 @@ li:hover {
     background-repeat: no-repeat;
     background-position: left center;
 }
+#blsocial::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background-image: url('bl_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
 
 footer {
-    margin-top: 10px;
     font-size: 32px;
     text-shadow: 0 0 25px #ffffff;
+    position: relative;
 }
