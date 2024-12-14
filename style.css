@@ -149,3 +149,9 @@ li:hover {
     background-repeat: no-repeat;
     background-position: left center;
 }
+
+footer {
+    margin-top: 10px;
+    font-size: 32px;
+    text-shadow: 0 0 25px #ffffff;
+}
