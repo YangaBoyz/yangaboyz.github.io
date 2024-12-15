@@ -19,6 +19,7 @@ body {
     text-shadow: 3px 3px 5px #ce1dff;
     text-align: center;
     transition: background-image 0.3s ease-in-out;
+    font-style: italic;
 }
 body::before {
     content: "";
