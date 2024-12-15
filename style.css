@@ -18,6 +18,7 @@ body {
     color: #ce1dff;
     text-shadow: 3px 3px 5px #ce1dff;
     text-align: center;
+    transition: background-image 0.3s ease-in-out;
 }
 body::before {
     content: "";
@@ -30,6 +31,33 @@ body::before {
     position: fixed;
     z-index: -1;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #4f0b61;
+        background-image: url(yangaboyzz_mobile.png);
+        background-position: center;
+        background-attachment: fixed;
+        font-size: 12px;
+        font-family: "Allerta Stencil", sans-serif;
+        color: #ce1dff;
+        text-shadow: 3px 3px 5px #ce1dff;
+        text-align: center;
+        transition: background-image 0.3s ease-in-out;
+    }
+    #list {
+        font-size: 24px;
+    }
+    li:hover {
+        animation: anim1 3s infinite;
+        font-size: 26px;
+    }
+}
+
 
 h1 {
     text-transform: uppercase;
@@ -165,4 +193,12 @@ footer {
     font-size: 32px;
     text-shadow: 0 0 25px #ffffff;
     position: relative;
+    animation: anim1 3s infinite;
+}
+
+#footer{
+    transition: all 0.3s ease-in-out;
+}
+#footer:hover {
+    font-size: 36px;
 }
